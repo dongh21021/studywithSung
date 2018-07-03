@@ -13,9 +13,9 @@ int main(void) {
 	for (int i = 0; i < num; i++) {
 		cin >> formula;
 		if (wellMatched(formula))
-			cout << "YES";
+			cout << "YES" << endl;
 		else
-			cout << "NO";
+			cout << "NO" << endl;
 	}
 }
 
@@ -23,7 +23,7 @@ bool wellMatched(const string& formula) {
 	const string opening("([{"), closing(")]}");   //opening()????
 	stack<char> openStack;
 
-	for (int i = 0; i < formula.length(); i++) {
+	for (int i = 0; i < formula.size(); i++) {
 		if (opening.find(formula[i]) != -1)   //여는 괄호라면
 			openStack.push(formula[i]);
 		else {  //여는 괄호가 아니라면
