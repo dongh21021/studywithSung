@@ -12,9 +12,9 @@ int main(void) {
 	for (int i = 0; i < n; i++) {
 		cin >> formula;
 		if (isVps(formula))
-			cout << "YES";
+			cout << "YES" << endl;
 		else
-			cout << "NO";
+			cout << "NO" << endl;
 	}
 }
 
